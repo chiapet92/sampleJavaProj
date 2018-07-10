@@ -1,0 +1,7 @@
+4 basics of OOPS
+inheritance 
+    objects derived from objects
+encapsulation
+    hiding methods
+abstraction
+polymorphism

@@ -1,34 +1,37 @@
 import java.util.*;
 
-class first{
+public class First{
+    Character[][] ticTacToe = new Character[3][3];
+
+    public First() {
+        for (int i = 0; i < ticTacToe.length ; i++) {
+            for (int j = 0; j < ticTacToe[i].length; j++) {
+                ticTacToe[i][j] = '-';
+            }
+        } 
+    }
+
+    // public void printBoard() {
+    //     for (int i = 0 ; i < this.ticTacToe.length ; i++ ) {
+    //         extracted();
+    //     }
+    // }
+
     public static void main(String[] args) {
-        String hi = "hi buddy! what are you doing right now  ";
-        System.out.println(hi.trim());
-        String[] words = hi.trim().split("[^a-zA-Z0-9']+");
-        // words.remove("");
-
-        // for (String i : words) {
-        //     if (i.equals("")) {
-                
-        //     }
+        // First board = new First();
+        // board.printBoard();
+        // for (c in xrange(5)) {
+        //     System.out.println(c);
         // }
-        // words = ArrayUtils.removeElement(words,"");
-        List<String> list = new ArrayList<String>(Arrays.asList(words));
-        list.remove("");
-        words = list.toArray(new String[0]);
-
-        for (int i = 0; i< words.length ;i++ ) {
-            System.out.printf("%d : "+words[i]+"%n",i);
+        Map<Integer, Integer> count = new HashMap<Integer, Integer>();
+        Set<Integer> countSet = new HashSet<Integer>();
+        countSet.add(1);
+        countSet.add(2);
+        countSet.add(1);
+        countSet.add(3);
+        for (int i : countSet) {
+            System.out.println(i);
         }
-
-        int[] eleven = new int[20];
-        int[] twelve = {1,2,3};
-        // System.out.println("Hello World");
-        // System.out.print(hi);
-        // System.out.print(hi);
-        // System.out.println(twelve[0]);
-        System.out.println(""+twelve.length);
-        System.out.printf("Eleven's length: %d",eleven.length);
-        System.out.println("/hi");
+        
     }
 }
