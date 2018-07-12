@@ -18,5 +18,4 @@ public enum Operation {
                 throw new AssertionError("Unknown operations " + this);
         }
     }
-
 }
